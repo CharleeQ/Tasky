@@ -3,13 +3,15 @@ import UIKit
 class AddTaskTableViewController: UITableViewController {
     
     @IBOutlet weak var titleTF: UITextField!
-    @IBOutlet weak var descriptionTF: UITextField!
+    @IBOutlet weak var descriptionTF: UITextView!
     @IBOutlet weak var selectDateDP: UIDatePicker!
     
     var delegate: TasksTableViewController?
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.navigationBar.isHidden = false
     }
     
     @IBAction func addTaskTapped(_ sender: UIBarButtonItem) {

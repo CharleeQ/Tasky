@@ -20,7 +20,13 @@ class EditTaskViewController: UIViewController {
         if let date = task.date {
             selectedDateDP.date = date
         }
+    
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
+        navigationController?.navigationBar.isHidden = false
     }
     
     @IBAction func saveTaskTappeed(_ sender: UIBarButtonItem) {
@@ -31,7 +37,7 @@ class EditTaskViewController: UIViewController {
             title: titleTF.text,
             description: descriptionTV.text,
             date: selectedDateDP.date,
-            isComplete: false
+            isComplete: completeSwitch.isOn
         )
         delegate?.fetchTasks(of: selectedDateDP.date)
         
