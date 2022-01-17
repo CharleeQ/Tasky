@@ -1,22 +1,19 @@
 import UIKit
 
-class EditTaskViewController: UIViewController {
+class EditTaskViewController: UITableViewController {
     
-    @IBOutlet weak var titleTF: UITextField!
+    @IBOutlet weak var titleTF: UITextView!
     @IBOutlet weak var descriptionTV: UITextView!
     @IBOutlet weak var selectedDateDP: UIDatePicker!
-    @IBOutlet weak var completeSwitch: UISwitch!
     
     var delegate: TasksTableViewController?
     var task: Task?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         guard let task = task else { return }
         titleTF.text = task.title
         descriptionTV.text = task.descript
-        completeSwitch.isOn = task.isComplete
         if let date = task.date {
             selectedDateDP.date = date
         }
@@ -37,7 +34,7 @@ class EditTaskViewController: UIViewController {
             title: titleTF.text,
             description: descriptionTV.text,
             date: selectedDateDP.date,
-            isComplete: completeSwitch.isOn
+            isComplete: task.isComplete
         )
         delegate?.fetchTasks(of: selectedDateDP.date)
         
@@ -49,6 +46,14 @@ class EditTaskViewController: UIViewController {
         
         present(alert, animated: true, completion: nil)
         
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 0
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0
     }
     
 }

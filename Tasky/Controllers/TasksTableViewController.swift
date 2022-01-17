@@ -68,8 +68,7 @@ class TasksTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "taskCell", for: indexPath) as! TaskTableViewCell
-        cell.titleLabel.text = tasks[indexPath.row].title
-        cell.descriptionLabel.text = tasks[indexPath.row].descript
+        cell.config(task: tasks[indexPath.row])
         
         return cell
         

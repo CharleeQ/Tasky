@@ -21,6 +21,8 @@
 		9FC1877B2789CAD900025619 /* EditTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC1877A2789CAD900025619 /* EditTaskViewController.swift */; };
 		9FC1877E278CCF4400025619 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC1877D278CCF4400025619 /* Date.swift */; };
 		9FC18781278DAE5D00025619 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC18780278DAE5D00025619 /* DataManager.swift */; };
+		9FEC81632794457900B013CB /* CheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC81622794457900B013CB /* CheckButton.swift */; };
+		9FEC81672794745600B013CB /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEC81662794745600B013CB /* UIImage.swift */; };
 		9FFD99872785C13C00A3665E /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFD99862785C13C00A3665E /* TaskTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,8 @@
 		9FC1877A2789CAD900025619 /* EditTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskViewController.swift; sourceTree = "<group>"; };
 		9FC1877D278CCF4400025619 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		9FC18780278DAE5D00025619 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		9FEC81622794457900B013CB /* CheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckButton.swift; sourceTree = "<group>"; };
+		9FEC81662794745600B013CB /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		9FFD99862785C13C00A3665E /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +95,7 @@
 				9F76E89B2781A81700FDBEED /* Main.storyboard */,
 				9F76E8A32781A81A00FDBEED /* LaunchScreen.storyboard */,
 				9FFD99862785C13C00A3665E /* TaskTableViewCell.swift */,
+				9FEC81622794457900B013CB /* CheckButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				9FC1877D278CCF4400025619 /* Date.swift */,
+				9FEC81662794745600B013CB /* UIImage.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -218,8 +224,10 @@
 				9F76E8B22781ADE200FDBEED /* Task+CoreDataClass.swift in Sources */,
 				9F76E8962781A81700FDBEED /* AppDelegate.swift in Sources */,
 				9F76E8A02781A81700FDBEED /* Tasky.xcdatamodeld in Sources */,
+				9FEC81672794745600B013CB /* UIImage.swift in Sources */,
 				9FC187792789C03100025619 /* ChooseDateViewController.swift in Sources */,
 				9F9FBBF7278468F6009BA590 /* AddTaskTableViewController.swift in Sources */,
+				9FEC81632794457900B013CB /* CheckButton.swift in Sources */,
 				9F76E8B32781ADE200FDBEED /* Task+CoreDataProperties.swift in Sources */,
 				9FC1877B2789CAD900025619 /* EditTaskViewController.swift in Sources */,
 				9FC1877E278CCF4400025619 /* Date.swift in Sources */,
