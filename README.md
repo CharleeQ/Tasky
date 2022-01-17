@@ -1,2 +1,1 @@
-# Tasky
-To Do iOS App with CRUD functions (Core Data)
+![alt text](https://github.com/CharleeQ/Tasky/blob/main/image.jpg?raw=true)
